@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <!-- Embed font -->
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto+Slab:wght@600&display=swap"
+        rel="stylesheet">
     <!-- CSS -->
     <link rel="stylesheet" href="./asets/CSS/reset.css">
     <link rel="stylesheet" href="./asets/CSS/style.css">
@@ -15,12 +18,77 @@
     <link rel="icon" type="image/png" sizes="32x32" href="./asets/Favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./asets/Favicon/favicon-16x16.png">
     <link rel="manifest" href="./asets/Favicon/site.webmanifest">
-    <title>Besnik</title>
+    <title>Besnik.</title>
 </head>
+
 <body>
     <!-- ====== HEADER ====== -->
-    <header>
-
+    <header class="header">
+        <div class="container header__container">
+            <div class="header__row">
+                <!-- Logo -->
+                <div class="loo header__logo">
+                    <a href="#!" class="logo__text">
+                        Bensnik.
+                    </a>
+                </div>
+                <!-- Nav -->
+                <nav class="navbar">
+                    <ul class="navbar__list">
+                        <li class="navbar__item">
+                            <a href="#!" class="navbar__link">
+                                Home
+                            </a>
+                        </li>
+                        <li class="navbar__item">
+                            <a href="#!" class="navbar__link">
+                                Features
+                            </a>
+                        </li>
+                        <li class="navbar__item">
+                            <a href="#!" class="navbar__link">
+                                Services
+                            </a>
+                        </li>
+                        <li class="navbar__item">
+                            <a href="#!" class="navbar__link">
+                                Resources
+                            </a>
+                        </li>
+                        <li class="navbar__item">
+                            <a href="#!" class="navbar__link">
+                                Contact
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <!-- Actions -->
+                <div class="action">
+                    <a href="#!" class="action__link">Sign in</a>
+                    <a href="#!" class="btn action___btn">Sign up</a>
+                </div>
+            </div>
+            <!-- Hero -->
+            <section class="hero">
+                <div class="hero__row">
+                    <section class="hero__content">
+                        <p class="hero__welcome">Welcome to Besnik Agency</p>
+                        <h1 class="hero__heading section__heading">Discover a place
+                            you'll love to live.</h1>
+                        <p class="desc hero__desc">Get the best real estate deals first,
+                            before they hit the mass market! Hot foreclosure deals with one simple search.
+                        </p>
+                        <a href="#!" class="btn hero__btn">
+                            More About Us
+                        </a>
+                    </section>
+                    <figure class="hero__image">
+                        <img src="./asets/Images/Hero/house.svg" alt="Discover a place
+                        you'll love to live" class="hero__piture">
+                    </figure>
+                </div>
+            </section>
+        </div>
     </header>
     <!-- ====== MAIN ====== -->
     <main>
@@ -31,4 +99,5 @@
 
     </footer>
 </body>
+
 </html>

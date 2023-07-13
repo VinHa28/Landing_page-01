@@ -3,6 +3,145 @@
     padding: 0;
     box-sizing: border-box;
 }
+html {
+    font-size: 62.5%;
+}
+:root {
+    --primary-color: #0F1B4C;
+}
 body {
     font-family: 'Poppins', sans-serif;
+}
+
+/* Logo */
+.logo {
+    font-family: 'Roboto Slab', serif;
+    font-size: 1em;
+}
+.logo__text {
+    font-size: 3.6em;
+    font-weight: 600;
+    color: #101010;
+}
+/* Common */
+a {
+    text-decoration: none;
+}
+.container {
+    margin: 0 auto;
+    width: 1110px;
+    max-width: calc(100% - 48px);
+}
+.desc {
+    color: #5A6473;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.875;
+}
+.section__heading {
+    color: #000339;
+    font-size: 35px;
+    font-weight: 600;
+}
+.btn {
+    display: inline-block;
+    border-radius: 8px;
+    height: 50px;
+    min-width: 170px;
+    background-color: var(--primary-color);
+    line-height: 50px;
+    text-align: center;
+    font-size: 13px;
+    color: #fff;
+    font-weight: 500;
+    transition: 0.2s;
+}
+.btn:hover {
+    background-color: #FFF;
+    color: var(--primary-color);
+}
+/* ====== Header ====== */ 
+.header {
+    height: 100vh;
+    background-color: #E6F0FF;
+}
+.header__container {
+    height: 100%;
+    position: relative;
+}
+.header__row {
+    display: flex;
+    align-items: center;
+    padding-top: 38px;
+}
+/* === Navigation === */
+.navbar  {
+    margin-left: 50px;
+}
+.navbar__list {
+    display: flex;
+}
+.navbar__link {
+    padding: 8px 14px;
+    font-weight: 500;
+    font-size: 1.4rem;
+    color: #4F5361;
+}
+.navbar__link:hover {
+    color:  var(--primary-color);
+}
+/* === Actions === */ 
+.action {
+    margin-left: auto; 
+}
+.action__link {
+    padding: 13px 16px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: #0F1B4C;
+}
+.action__link:hover {
+   font-weight: 600;
+}
+.action___btn {
+    min-width: 98px;
+    height: 40px;
+    font-size: 14px;
+    line-height: 40px;
+}
+/* === Hero === */
+.hero {
+    margin-top: 130px;
+}
+.hero__row {
+    display: flex;
+}
+.hero__content {
+    width: 51%;
+}
+.hero__welcome {
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 0.18px;
+    color: #687690;
+}
+.hero__heading {
+    margin-top: 8px;
+    margin-top: 8px;    
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 1.19;
+}
+.hero__desc {
+    margin-top: 30px;
+    font-size: 18px;
+    line-height: 1.78;
+}
+.hero__btn {
+    margin-top: 40px;
+}
+.hero__piture {
+    position: absolute;
+    right: -100px;
+    bottom: 0;
 }
