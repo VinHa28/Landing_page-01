@@ -145,3 +145,45 @@ a {
     right: -100px;
     bottom: 0;
 }
+
+/* ===== Clients ===== */
+.client {
+    margin-top: 80px;
+}
+.client__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.client__logo {
+    margin-bottom: 23px;
+}
+.client__logo .logo__text {
+    font-size: 3em;
+}
+.client__desc {
+    font-weight: 500;
+    font-size: 1.6em;
+    line-height: 1.25;
+}
+.client__desc--left {
+    margin-top: 18px;
+}
+/* Client list */
+.client__list {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 70px;
+}
+.client__link {
+    display: flex;
+    align-items: center;
+    height: 90px;
+    border-radius: 12px;
+    transition:  0.2s;
+    padding: 26px 40px;
+}
+.client__link:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    
+}
