@@ -518,3 +518,46 @@ a {
     font-weight: 500;
     color: #7B8087;
 }
+/* === Subscription === */
+.subscription {
+    margin-top: 100px;
+}
+.subscription__body {
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 370px;
+    border-radius: 20px;
+    background-color: #063183;
+}
+.subscription__heading {
+    color: #FFF;
+}
+.subscription__info-block {
+    padding: 0 80px;
+}
+.subscription__desc {
+    margin-top: 15px;
+    max-width: 520px;
+    color: #fff;
+    font-weight: 300;
+    opacity: 0.75;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+.subscription__btn {
+    margin-top: 20px;
+    color: #002366;
+    background: #FFF;
+}
+.subscription__btn:hover {
+    background-color: #5784F5;;
+    color: #fff;
+}
+.subscription__img {
+    display: inline-block;
+    position: absolute;
+    bottom: 0;
+}
