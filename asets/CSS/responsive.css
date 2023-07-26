@@ -154,6 +154,9 @@
   .show_on_tablet {
     display: block;
   }
+  .header {
+    position: relative;
+  }
   /* === Hero === */
   .hero {
     margin-top: 180px;
@@ -210,7 +213,10 @@
   }
   /* === Scroll Down === */ 
   .scroll-down {
-    margin-top: 200px;
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
     display: block;
     font-size: 2.4rem;
     color: var(--primary-color);
@@ -272,7 +278,7 @@
   .mobile__action {
     position: relative;
     margin-top: 30px;
-    width: 70%;
+    width: 95%;
     display: flex;
     justify-content: space-between;
   }
