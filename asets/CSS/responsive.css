@@ -1,9 +1,10 @@
-.show_on_mobile {
+.show_on_mobile, .show_on_tablet {
   display: none;
 }
 .show_on_tablet_mb{
   display: none;
 }
+
 /* =========== PC =========== */
 @media screen and (min-width: 992px) {
   .mobile-header {
@@ -107,7 +108,8 @@
   .client__list {
     justify-content: center;
   }
-
+  
+  
   /* === Guide === */
   .guide__list {
     gap: 40px 50px;
@@ -149,7 +151,9 @@
   .mobile__action {
     display: none;
   }
-
+  .show_on_tablet {
+    display: block;
+  }
   /* === Hero === */
   .hero {
     margin-top: 180px;
@@ -183,7 +187,11 @@
     min-width: 270px;
     font-weight: 400;
   }
-
+  /* === Client === */
+  .client {
+    padding-top: 80px;
+    margin-top: 0;
+  }
   /* === Featured === */
   .featured__list {
     grid-template-columns: repeat(2, 1fr);
@@ -199,6 +207,40 @@
   /* === Subscription === */ 
   .subscription__heading {
     font-size: 3.8rem;
+  }
+  /* === Scroll Down === */ 
+  .scroll-down {
+    margin-top: 200px;
+    display: block;
+    font-size: 2.4rem;
+    color: var(--primary-color);
+    font-weight: 500;
+    text-align: center;
+  }
+  .scroll-down i {
+    display: block;
+    margin-bottom: 20px;
+    opacity: 0;
+    -webkit-animation: sdb03 3s infinite;
+    animation: sdb03 2s infinite;
+    box-sizing: border-box;
+  }
+  @-webkit-keyframes sdb03 {
+    0% {
+      opacity: 0;
+    }
+    30% {
+      opacity: 1;
+    }
+    60% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  .scroll-down:hover {
+    opacity: 0.7;
   }
 }
 
@@ -338,7 +380,29 @@
     margin-top: 16px;
   }
   /* === Subscription === */
+  .subscription__body {
+    height: auto;
+  }
   .subscription__info-block {
-    padding: 0 30px;
+    padding: 40px 30px;
+  }
+  /* === Footer === */ 
+  .footer__row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px 50px;
+  }
+  .footer__title {
+    margin-bottom: 2px;
+  }
+  .footer__list {
+    row-gap: 8px;
+  }
+  .footer__copyright {
+    flex-wrap: wrap;
+    row-gap: 8px;
+  }
+  .footer__desc {
+    width: 100%;
   }
 }
