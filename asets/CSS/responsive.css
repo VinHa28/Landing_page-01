@@ -1,0 +1,269 @@
+/* =========== PC =========== */
+@media screen and (min-width: 992px) {
+  .mobile-header {
+    display: none;
+  }
+}
+
+/* =========== Tablet & Mobile =========== */
+@media screen and (max-width: 991px) {
+
+  /* ===== HEADER ===== */
+  .navbar {
+    display: none;
+  }
+
+  .header__row {
+    position: relative;
+  }
+
+  .header__logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 13px;
+  }
+
+  /* === Menu Drawer */
+  .header__toggle-menu svg {
+    width: 24px;
+    color: var(--primary-color);
+  }
+
+  .mobile-header__menu-overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    visibility: hidden;
+    transition: ease-out 0.5s;
+  }
+
+  .mobile-header__menu-drawer {
+    position: fixed;
+    padding: 40px;
+    inset: 0 35% 0 0;
+    background-color: #ffff;
+    z-index: 2;
+    transform: translateX(-100%);
+    transition: ease 0.5s;
+  }
+
+  .mobile-header__checkbox:checked~.mobile-header__menu-overlay {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .mobile-header__checkbox:checked~.mobile-header__menu-drawer {
+    transform: translateX(0);
+  }
+
+  .mobile-header__navbar {
+    display: block;
+    margin-top: 30px;
+    margin-left: 0;
+  }
+
+  .mobile-header__navbar .navbar__list {
+    flex-direction: column;
+  }
+
+  .mobile-header__navbar .navbar__link {
+    display: inline-block;
+    width: 100%;
+    padding: 20px 0 20px 14px;
+    font-size: 20px;
+    border-radius: 6px;
+  }
+
+  .mobile-header__navbar .navbar__link:hover {
+    background-color: rgba(230, 240, 255, 0.5);
+  }
+
+  /* === Hero === */
+  .hero__piture {
+    display: none;
+  }
+
+  .hero__content {
+    width: 75%;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .client__list {
+    justify-content: center;
+  }
+
+  /* === Guide === */
+  .guide__list {
+    gap: 40px 50px;
+  }
+}
+
+/* =========== Tablet =========== */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .mobile__action {
+    display: none;
+  }
+
+  /* === Hero === */
+  .hero {
+    margin-top: 180px;
+  }
+
+  .hero__content {
+    width: 90%;
+  }
+
+  .hero__welcome {
+    font-size: 26px;
+  }
+
+  .hero__heading {
+    margin-top: 40px;
+    font-size: 60px;
+    line-height: 1.3;
+  }
+
+  .hero__desc {
+    font-size: 20px;
+    width: 85%;
+    margin: 35px auto auto;
+  }
+
+  .hero__btn {
+    margin-top: 40px;
+    font-size: 22px;
+    height: 80px;
+    line-height: 80px;
+    min-width: 270px;
+    font-weight: 400;
+  }
+
+  /* === Featured === */
+  .featured__list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* =========== Mobile =========== */
+@media screen and (max-width: 767px) {
+  .pc-header .action {
+    display: none;
+  }
+
+  /* ===== HEADER ===== */
+  .mobile-header__menu-drawer {
+    padding: 20px 0px 20px 20px;
+    inset: 0 40% 0 0;
+  }
+
+  .mobile-header__logo .logo__text {
+    font-size: 3em;
+  }
+
+  .mobile-header__navbar .navbar__link {
+    font-size: 1.6rem;
+    padding: 12px 0 12px 10px;
+
+  }
+
+  .mobile__action {
+    position: relative;
+    margin-top: 30px;
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .mobile__action::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: #333;
+    top: -20px;
+    opacity: 0.2;
+  }
+
+  .mobile__action .action__link {
+    font-size: 1.6rem;
+  }
+
+  .mobile__action .action__btn:hover {
+    background-color: #E6F0FF;
+  }
+
+  /* === Hero === */
+  .hero {
+    margin-top: 75px;
+  }
+
+  .hero__welcome {
+    font-size: 18px;
+  }
+
+  .hero__heading {
+    font-size: 44px;
+    margin-top: 40px;
+  }
+
+  .hero__desc {
+    margin-top: 15px;
+    font-size: 16px;
+  }
+
+  .hero__btn {
+    margin-top: 30px;
+  }
+
+  /* === Client === */
+  .client {
+    margin-top: 50px;
+  }
+
+  .client__logo {
+    margin-bottom: 15px;
+  }
+
+  .client__row {
+    row-gap: 20px;
+  }
+
+  .client__desc--left {
+    margin-top: 8px;
+  }
+
+  .client__list {
+    margin-top: 50px;
+  }
+
+  /* === Guide === */
+  .guide {
+    padding-top: 60px;
+  }
+
+  /* === Featured === */
+  .featured {
+    margin-top: 0;
+    padding-top: 60px;
+  }
+  .featured__row {
+    flex-wrap: wrap;
+    row-gap: 10px;
+  }
+
+  .featured__desc {
+    font-size: 1.5rem;
+    margin-top: 5px;
+  }
+
+  .featured__list {
+    margin-top: 50px;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

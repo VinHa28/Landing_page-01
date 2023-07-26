@@ -10,9 +10,14 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Poppins:wght@300;400;500;600;700&family=Roboto+Slab:wght@600&display=swap"
         rel="stylesheet" />
+    <!-- Embed font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- CSS -->
     <link rel="stylesheet" href="./asets/CSS/reset.css" />
     <link rel="stylesheet" href="./asets/CSS/style.css" />
+    <link rel="stylesheet" href="./asets/CSS/responsive.css">
     <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="./asets/Favicon/apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="./asets/Favicon/favicon-32x32.png" />
@@ -25,39 +30,90 @@
     <!-- ====== HEADER ====== -->
     <header class="header">
         <div class="container header__container">
-            <div class="header__row">
-                <!-- Logo -->
-                <div class="logo header__logo">
-                    <a href="#!" class="logo__text"> Bensnik. </a>
+            <!-- Tablet & Mobile header -->
+            <header class="mobile-header">
+                <input style="display: none;" type="checkbox" name="" id="menu-checkbox"
+                    class="mobile-header__checkbox">
+                <label for="menu-checkbox" class="mobile-header__menu-overlay"></label>
+                <!-- Menu content -->
+                <div class="mobile-header__menu-drawer">
+                    <!-- Logo -->
+                    <div class="logo mobile-header__logo">
+                        <a href="#!" class="logo__text"> Bensnik. </a>
+                    </div>
+                    <!-- Nav -->
+                    <nav class="navbar mobile-header__navbar">
+                        <ul class="navbar__list">
+                            <li class="navbar__item">
+                                <a href="#!" class="navbar__link"> Home </a>
+                            </li>
+                            <li class="navbar__item">
+                                <a href="#!" class="navbar__link"> Features </a>
+                            </li>
+                            <li class="navbar__item">
+                                <a href="#!" class="navbar__link"> Services </a>
+                            </li>
+                            <li class="navbar__item">
+                                <a href="#!" class="navbar__link">
+                                    Resources
+                                </a>
+                            </li>
+                            <li class="navbar__item">
+                                <a href="#!" class="navbar__link"> Contact </a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <!-- Actions -->
+                    <div class="mobile__action">
+                        <a href="#!" class="action__link">Sign in</a>
+                        <a href="#!" class="btn action___btn">Sign up</a>
+                    </div>
                 </div>
-                <!-- Nav -->
-                <nav class="navbar">
-                    <ul class="navbar__list">
-                        <li class="navbar__item">
-                            <a href="#!" class="navbar__link"> Home </a>
-                        </li>
-                        <li class="navbar__item">
-                            <a href="#!" class="navbar__link"> Features </a>
-                        </li>
-                        <li class="navbar__item">
-                            <a href="#!" class="navbar__link"> Services </a>
-                        </li>
-                        <li class="navbar__item">
-                            <a href="#!" class="navbar__link">
-                                Resources
-                            </a>
-                        </li>
-                        <li class="navbar__item">
-                            <a href="#!" class="navbar__link"> Contact </a>
-                        </li>
-                    </ul>
-                </nav>
-                <!-- Actions -->
-                <div class="action">
-                    <a href="#!" class="action__link">Sign in</a>
-                    <a href="#!" class="btn action___btn">Sign up</a>
+            </header>
+            <!-- PC header -->
+            <header class="pc-header">
+                <div class="header__row">
+                    <!-- Tablet & Mobile menu -->
+                    <label for="menu-checkbox" class="header__toggle-menu">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                            <path fill="currentColor"
+                                d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z">
+                            </path>
+                        </svg>
+                    </label>
+                    <!-- Logo -->
+                    <div class="logo header__logo">
+                        <a href="#!" class="logo__text"> Bensnik. </a>
+                    </div>
+                    <!-- Nav -->
+                    <nav class="navbar">
+                        <ul class="navbar__list">
+                            <li class="navbar__item">
+                                <a href="#!" class="navbar__link"> Home </a>
+                            </li>
+                            <li class="navbar__item">
+                                <a href="#!" class="navbar__link"> Features </a>
+                            </li>
+                            <li class="navbar__item">
+                                <a href="#!" class="navbar__link"> Services </a>
+                            </li>
+                            <li class="navbar__item">
+                                <a href="#!" class="navbar__link">
+                                    Resources
+                                </a>
+                            </li>
+                            <li class="navbar__item">
+                                <a href="#!" class="navbar__link"> Contact </a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <!-- Actions -->
+                    <div class="action">
+                        <a href="#!" class="action__link">Sign in</a>
+                        <a href="#!" class="btn action___btn">Sign up</a>
+                    </div>
                 </div>
-            </div>
+            </header>
             <!-- Hero -->
             <section class="hero">
                 <div class="hero__row">
@@ -429,7 +485,7 @@
             </div>
         </section>
         <!-- Subscription -->
-        <section class="subscription">
+        <section style="display: none;" class="subscription">
             <div class="container">
                 <div class="subscription__body">
                     <section class="subscription__info-block">
@@ -526,7 +582,7 @@
             </div>
             <div class="footer__copyright">
                 <!-- Logo -->
-                <div class="logo header__logo">
+                <div class="logo">
                     <a href="#" class="logo__text"> Bensnik. </a>
                 </div>
                 <p class="footer__copyright-text">Copyright 2020.com, All rights reserved.</p>
