@@ -1,3 +1,9 @@
+.show_on_mobile {
+  display: none;
+}
+.show_on_tablet_mb{
+  display: none;
+}
 /* =========== PC =========== */
 @media screen and (min-width: 992px) {
   .mobile-header {
@@ -7,7 +13,12 @@
 
 /* =========== Tablet & Mobile =========== */
 @media screen and (max-width: 991px) {
-
+  .show_on_tablet_mb {
+    display: block;
+  }
+  .hide_on_tablet_mobile {
+    display: none;
+  }
   /* ===== HEADER ===== */
   .navbar {
     display: none;
@@ -101,6 +112,36 @@
   .guide__list {
     gap: 40px 50px;
   }
+  /* === Stats === */
+  .stats {
+    padding: 0;
+  }
+  .stats__row {
+    display: block;
+  }
+  .stats__media-block, .stats__content-block {
+    
+    width: 100%;
+  }
+  .stats__text{
+    margin: 0;
+  }
+  .stats__text, .stats__heading, .stats__desc {
+    width: 100%;
+  }
+  .stats__media-block {
+    margin-top: 40px;
+  }
+  .stats__img {
+    width: 100%;
+  }
+  .stats-card {
+    top: unset;
+    bottom: -1px;
+    left: -1px;
+    border-radius: 0 12px 0 12px;
+  }
+  
 }
 
 /* =========== Tablet =========== */
@@ -147,10 +188,25 @@
   .featured__list {
     grid-template-columns: repeat(2, 1fr);
   }
+  /* === Stats === */
+  .stats__heading {
+    font-size: 3.8rem;
+  }
+  .stats__desc {
+    width: 90%;
+    font-size: 1.8rem;
+  }
+  /* === Subscription === */ 
+  .subscription__heading {
+    font-size: 3.8rem;
+  }
 }
 
 /* =========== Mobile =========== */
 @media screen and (max-width: 767px) {
+  .show_on_mobile {
+    display: block;
+  }
   .pc-header .action {
     display: none;
   }
@@ -250,20 +306,39 @@
   /* === Featured === */
   .featured {
     margin-top: 0;
-    padding-top: 60px;
+    padding: 60px 0;
   }
   .featured__row {
     flex-wrap: wrap;
     row-gap: 10px;
   }
-
+  .featured__link {
+    display: none;
+  }
   .featured__desc {
     font-size: 1.5rem;
     margin-top: 5px;
   }
 
   .featured__list {
-    margin-top: 50px;
+    margin-top: 40px;
     grid-template-columns: repeat(1, 1fr);
+  }
+  .featured__view-all-link {
+    margin-top: 20px;
+  }
+  /* === Stats === */
+  .stats__qty-list {
+    flex-direction: column;
+    align-items: center;
+    row-gap: 50px;
+    margin-top: 70px;
+  } 
+  .stats__qty-desc {
+    margin-top: 16px;
+  }
+  /* === Subscription === */
+  .subscription__info-block {
+    padding: 0 30px;
   }
 }

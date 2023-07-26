@@ -368,16 +368,37 @@
                                 </div>
                             </setion>
                         </a>
-                    </li>
+                    </li> 
                 </ul>
+                <div class="featured__view-all show_on_mobile">
+                    <a href="#!" class="btn featured__view-all-link">
+                        View All Properties
+                    </a>
+                </div>
             </div>
         </section>
         <!-- STATS -->
         <section class="stats">
             <div class="container">
                 <div class="stats__row">
+                    <!-- Content block on Tablet/Mobile -->
+                    <section class="stats__content-block show_on_tablet_mb">
+                        <div class="stats__text">
+                            <h2 class="stats__heading heading">
+                                You’ve found a neighborhood you love.
+                            </h2>
+                            <p class="stats__desc desc">
+                                When you own a home, you’re committing to
+                                living in one location for a while. In a
+                                recent Trulia survey, we found that five out
+                                of six respondents said finding the right
+                                neighborhood
+                            </p>
+                        </div>
+                    </section>
                     <figure class="stats__media-block">
                         <img src="./asets/Images/Stats/house.jpg" alt="" class="stats__img" />
+                       <!-- Stats Cards -->
                         <div class="stats-card">
                             <strong class="stats-card__title">
                                 40,000+
@@ -453,7 +474,8 @@
                             </div>
                         </div>
                     </figure>
-                    <section class="stats__content-block">
+                    <!-- Content Block -->
+                    <section class="stats__content-block hide_on_tablet_mobile">
                         <div class="stats__text">
                             <h2 class="stats__heading heading">
                                 You’ve found a neighborhood you love.
@@ -485,7 +507,7 @@
             </div>
         </section>
         <!-- Subscription -->
-        <section style="display: none;" class="subscription">
+        <section class="subscription">
             <div class="container">
                 <div class="subscription__body">
                     <section class="subscription__info-block">
@@ -498,7 +520,7 @@
                         <a href="#!" class="btn subscription__btn">Subscribe</a>
                     </section>
                     <figure class="subscription__media-block">
-                        <img src="./asets/Images/Subscription/home-illustration.svg" alt="" class="subscription__img" />
+                        <img src="./asets/Images/Subscription/home-illustration.svg" alt="" class="subscription__img hide_on_tablet_mobile" />
                     </figure>
                 </div>
             </div>
